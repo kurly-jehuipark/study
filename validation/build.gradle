@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+    id 'io.freefair.lombok' version '3.2.0'
+    id 'org.springframework.boot' version '2.1.5.RELEASE'
+    id 'io.spring.dependency-management' version '1.0.6.RELEASE'
+}
+
+repositories {
+    maven { url "https://repo.infra.kurlycorp.kr/repository/kurly-maven/" }
+    mavenLocal()
+    mavenCentral()
+}
+
+group 'com.kurly.jehui'
+version '1.0-SNAPSHOT'
+sourceCompatibility = 11
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    runtimeOnly 'com.h2database:h2:1.4.199'
+    runtimeOnly 'mysql:mysql-connector-java:5.1.47'
+    testImplementation "org.springframework.boot:spring-boot-starter-test"
+}

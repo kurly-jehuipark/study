@@ -1,0 +1,44 @@
+{
+  "sample1": {
+    "password": "검증안함",
+    "loginId": "검증안함",
+    "username": "검증안함",
+    "age": 0
+  },
+  "sample2": {
+    "memberSeq": 0,
+    "password": "비밀번호형식오류"
+  },
+  "sample1Collection": [
+    {
+      "loginId": "아이디검증실패__",
+      "username": "홍길동",
+      "password": "11q2w#E33",
+      "age": 10
+    },
+    {
+      "loginId": "test123",
+      "username": "이름검증실패__",
+      "password": "11q2w#E33",
+      "age": 10
+    },
+    {
+      "loginId": "test123",
+      "username": "홍길동",
+      "password": "비밀번호검증실패__",
+      "age": 10
+    },
+    {
+      "loginId": "test123",
+      "username": "홍길동",
+      "password": "비밀번호검증실패__",
+      "age": 0
+    },
+    {
+      "loginId": "아이디검증실패__",
+      "username": "이름검증실패__",
+      "password": "비밀번호검증실패__",
+      "age": 0
+    }
+  ]
+}
